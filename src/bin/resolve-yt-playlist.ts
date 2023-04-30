@@ -1,10 +1,15 @@
 import * as fs from 'node:fs/promises'
 
 import { google } from 'googleapis'
+import path from 'path'
+import { fileURLToPath } from 'url'
 
 import * as types from '@/server/types'
 import * as yt from '@/server/youtube'
 import '@/server/config'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 async function main() {
   const youtube = google.youtube({
@@ -32,7 +37,7 @@ async function main() {
   }
 
   await fs.writeFile(
-    `out/${playlistId}.json`,
+    path.join(__dirname, `out/${playlistId}.json`),
     JSON.stringify(playlistDetailsWithTranscripts, null, 2),
     'utf-8'
   )
