@@ -62,12 +62,15 @@ export async function upsertVideoTranscriptsForPlaylist(
             'vectors'
           )
 
+          console.log('upsert success , server/pinecone.ts')
+
           await pinecone.upsert({
             vectors: videoEmbeddings
           })
 
           return video
         } catch (err) {
+          console.log("error upserting video's embeddings, server/pinecone.ts")
           console.warn(
             'error upserting transcripts for video',
             video.id,
