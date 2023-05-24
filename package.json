@@ -2,9 +2,9 @@
   "name": "yt-semantic-search",
   "version": "1.0.0",
   "private": true,
-  "description": "OpenAI-powered semantic search for any YouTube playlist – featuring the All-In Podcast.",
-  "author": "Travis Fischer <travis@transitivebullsh.it>",
-  "repository": "transitive-bullshit/yt-channel-search",
+  "description": "AI-powered semantic search for any YouTube playlist – featuring the All-In Podcast.",
+  "author": "Abu Musaddiq Zamani",
+  "repository": "amzamani/btech-project",
   "license": "MIT",
   "type": "module",
   "engines": {

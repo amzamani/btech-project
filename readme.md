@@ -29,8 +29,9 @@ You can use it to power advanced search across _any YouTube channel or playlist_
 - Navigate to the root directory of the repository in your terminal.
 - use node 18+
 - Run the command `npm install` to install all the necessary dependencies.
-- a file would be created in the src/bin/out folder, copy that file in the root /out/ folder
+
 - Run the command `npx tsx src/bin/resolve-yt-playlist.ts` to download the English transcripts for each episode of the target playlist (in this case, the All-In Podcast Episodes Playlist).
+- a file would be created in the src/bin/out folder, copy that file in the root /out/ folder
 - Run the command `npx tsx src/bin/process-yt-playlist.ts` to pre-process the transcripts and fetch embeddings from OpenAI, then insert them into a Pinecone search index.
 - You can now run the command `npx tsx src/bin/query.ts` to query the Pinecone search index.
 - (Optional) Run the command `npx tsx src/bin/generate-thumbnails.ts` to generate timestamped thumbnails of each video in the playlist. This step takes ~2 hours and requires a stable internet connection.
