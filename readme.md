@@ -1,20 +1,8 @@
 
 
-# YouTube Semantic Search <!-- omit in toc -->
+# Custom Semantic Search Engine <!-- omit in toc -->
 
 
-
-
-
-- [Intro](#intro)
-- [How to get started](#How-to-get-started)
-- [Example Queries](#example-queries)
-- [Screenshots](#screenshots)
-- [How It Works](#how-it-works)
-- [TODO](#todo)
-- [Feedback](#feedback)
-- [Credit](#credit)
-- [License](#license)
 
 ## Intro
 
@@ -22,7 +10,7 @@
 
 This project uses the latest models from [OpenAI](https://openai.com/) to build a semantic search index across every episode of the Pod. It allows you to find your favorite moments with Google-level accuracy and rewatch the exact clips you're interested in.
 
-You can use it to power advanced search across _any YouTube channel or playlist_. The demo uses the [All-In Podcast](https://www.youtube.com/channel/UCESLZhusAkFfsNsApnjF_Cg) because it's my favorite 💕, but it's designed to work with any playlist.
+You can use it to power advanced search across _any YouTube channel or playlist_. The demo uses the [All-In Podcast](https://www.youtube.com/channel/UCESLZhusAkFfsNsApnjF_Cg)
 
 ## How to get started
 - Clone the repository to your local machine.
